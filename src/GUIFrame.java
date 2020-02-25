@@ -110,14 +110,14 @@ public class GUIFrame {
 		searchBox.setColumns(10);
 		
 		JRadioButton aToZRdoBtn = new JRadioButton("A to Z");
-		aToZRdoBtn.setBounds(6, 70, 141, 23);
+		aToZRdoBtn.setBounds(6, 75, 70, 23);
 		aToZRdoBtn.setFont(new Font("Chalkboard", Font.PLAIN, 13));
 		aToZRdoBtn.setSelected(true);
 		buttonGroup.add(aToZRdoBtn);
 		frmDictionary.getContentPane().add(aToZRdoBtn);
 		
 		JRadioButton zToARdoBtn = new JRadioButton("Z to A");
-		zToARdoBtn.setBounds(6, 95, 141, 23);
+		zToARdoBtn.setBounds(6, 100, 70, 23);
 		zToARdoBtn.setFont(new Font("Chalkboard", Font.PLAIN, 13));
 		buttonGroup.add(zToARdoBtn);
 		frmDictionary.getContentPane().add(zToARdoBtn);
