@@ -127,6 +127,31 @@ public class GUIFrame {
 		wordList.setFont(new Font("Chalkboard", Font.PLAIN, 12));
 		frmDictionary.getContentPane().add(wordList);
 		
+		JLabel lblNewLabel = new JLabel("Dictionary");
+		lblNewLabel.setBounds(260, 11, 332, 61);
+		lblNewLabel.setFont(new Font("Chalkboard", Font.BOLD, 47));
+		frmDictionary.getContentPane().add(lblNewLabel);
+		
+		JLabel lblWord = new JLabel("Word");
+		lblWord.setFont(new Font("Dialog", Font.BOLD, 28));
+		lblWord.setBounds(270, 75, 332, 45);
+		frmDictionary.getContentPane().add(lblWord);
+		
+		JLabel lblDefinitions = new JLabel("Definitions");
+		lblDefinitions.setFont(new Font("Dialog", Font.BOLD, 28));
+		lblDefinitions.setBounds(270, 152, 332, 45);
+		frmDictionary.getContentPane().add(lblDefinitions);
+		
+		JLabel lblSynonyms = new JLabel("Synonyms");
+		lblSynonyms.setFont(new Font("Dialog", Font.BOLD, 28));
+		lblSynonyms.setBounds(270, 318, 332, 45);
+		frmDictionary.getContentPane().add(lblSynonyms);
+		
+		JLabel lblAntonyms = new JLabel("Antonyms");
+		lblAntonyms.setFont(new Font("Dialog", Font.BOLD, 28));
+		lblAntonyms.setBounds(270, 399, 332, 45);
+		frmDictionary.getContentPane().add(lblAntonyms);
+		
 		wordInfoDisplay = new JTextField();
 		wordInfoDisplay.setBounds(251, 70, 429, 437);
 		wordInfoDisplay.setFont(new Font("Chalkboard", Font.PLAIN, 13));
@@ -135,11 +160,6 @@ public class GUIFrame {
 		wordInfoDisplay.setEditable(false);
 		frmDictionary.getContentPane().add(wordInfoDisplay);
 		wordInfoDisplay.setColumns(10);
-		
-		JLabel lblNewLabel = new JLabel("Dictionary");
-		lblNewLabel.setBounds(260, 11, 332, 61);
-		lblNewLabel.setFont(new Font("Chalkboard", Font.BOLD, 47));
-		frmDictionary.getContentPane().add(lblNewLabel);
 
 	}
 }
