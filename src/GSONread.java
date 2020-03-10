@@ -47,7 +47,4 @@ public class GSONread {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		return null;
-	}
 }
