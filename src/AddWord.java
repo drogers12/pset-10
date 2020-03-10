@@ -100,7 +100,32 @@ public class AddWord {
 				}
 			}
 		});
-		
+		posTextField.setBounds(6, 78, 130, 26);
+		posTextField.setFont(new Font("Chalkboard", Font.PLAIN, 13));
+		posTextField.setColumns(10);
+		addWordFrame.getContentPane().add(posTextField);
+
+		JLabel posLabel = new JLabel("Part of Speech");
+		posLabel.setBounds(6, 61, 113, 16);
+		posLabel.setFont(new Font("Chalkboard", Font.PLAIN, 13));
+		addWordFrame.getContentPane().add(posLabel);
+
+		definitionTextField = new JTextField("Definition...");
+		definitionTextField.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusGained(FocusEvent e) {
+				if (definitionTextField.getText().equals("Definition...")) {
+					definitionTextField.setText("");
+				}
+			}
+
+			@Override
+			public void focusLost(FocusEvent e) {
+				if (definitionTextField.getText().equals("")) {
+					definitionTextField.setText("Definition...");
+				}
+			}
+		});
 		definitionTextField.setBounds(6, 133, 283, 26);
 		definitionTextField.setFont(new Font("Chalkboard", Font.PLAIN, 13));
 		definitionTextField.setColumns(10);
