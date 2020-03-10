@@ -1,23 +1,37 @@
 import java.util.ArrayList;
 
 public class Word {
-
-	private String word;
-	// create instance variable array of definitions and create a getter for it
-
-	private String[] synonyms;
-	private String[] antonyms;
-
-	public String getWord() {
+	
+	public String word;
+	public ArrayList<Definition> definitions; 
+	public ArrayList<String> synonyms;
+	public ArrayList<String> antonyms;
+	
+	public Word() {
+		
+	}
+	
+	public Word(String name, ArrayList<Definition> definitions, ArrayList<String> synonyms, ArrayList<String> antonyms) {
+		this.word = name;
+		this.definitions = definitions;
+		this.synonyms = synonyms;
+		this.antonyms = antonyms;
+	}
+	
+	public String getName() {
 		return word;
 	}
-
-	public String[] getSynonyms() {
+	
+	public ArrayList<Definition> getDefinitions() {
+		return definitions;
+	}
+	
+	public ArrayList<String> getSynonyms() {
 		return synonyms;
 	}
-
-	public String[] getAntonyms() {
+	
+	public ArrayList<String> getAntonyms() {
 		return antonyms;
 	}
-
+	
 }
