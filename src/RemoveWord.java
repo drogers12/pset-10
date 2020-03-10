@@ -10,4 +10,20 @@ import java.awt.event.ActionEvent;
 
 public class RemoveWord {
 
-}
+	public JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					RemoveWord window = new RemoveWord();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
